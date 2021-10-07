@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa test</title>
+    <link rel="stylesheet" href="css/main.css?ver=1.0" type="text/css" />
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.serialize-object.min.js"></script>
+</head>
+<body>
+    <div class="narrow-container flex relative">
+        <div class="full center">
+            <form id="jysk-apply" class="full prijave flex">
+                <h2 class="full center-text question">Ti si?</h2>
+                <div class="full answer-row wrap">
+                    <div>
+                        <input type="radio" id="zena" name="spol" value="zena">
+                        <label for="zena" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Žena</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="muskarac" name="spol" value="muskarac">
+                        <label for="muskarac" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Muškarac</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <h2 class="full center-text question">Koliko imaš godina?</h2>
+                <div class="full answer-row wrap">
+                    <div>
+                        <input type="radio" id="manje_od_20" name="godine" value="manje_od_20">
+                        <label for="manje_od_20" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Manje od 20</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="21-30" name="godine" value="21-30">
+                        <label for="21-30" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">21-30</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="31-40" name="godine" value="godine">
+                        <label for="31-40" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">31-40</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="vise_od_40" name="godine" value="vise_od_40">
+                        <label for="vise_od_40" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Više od 40</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <h2 class="full center-text question">Iz koje si regije?</h2>
+                <div class="full answer-row wrap">
+                    <div>
+                        <input type="radio" id="sredisnja" name="regija" value="sredisnja">
+                        <label for="sredisnja" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Središnja Hrvatska</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="istocna" name="regija" value="istocna">
+                        <label for="istocna" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Istočna Hrvatska</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gorska" name="regija" value="gorska">
+                        <label for="gorska" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Gorska Hrvatska</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sjeverno-primorje" name="regija" value="sjeverno-primorje">
+                        <label for="sjeverno-primorje" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Sjeverno hrvatsko primorje</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="juzno-primorje" name="regija" value="juzno-primorje">
+                        <label for="juzno-primorje" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Južno hrvatsko primorje</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <h2 class="full center-text question">Koliko cipela imaš?</h2>
+                <div class="full answer-row wrap">
+                    <div>
+                        <input type="radio" id="manjeod5" name="broj_cipela" value="manjeod5">
+                        <label for="manjeod5" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Manje od 5 pari</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="od5do10" name="broj_cipela" value="od5do10">
+                        <label for="od5do10" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Od 5 do 10 pari</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="od10do15" name="broj_cipela" value="od10do15">
+                        <label for="od10do15" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Od 10 do 15 pari</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="viseod15" name="broj_cipela" value="viseod15">
+                        <label for="viseod15" class="button-label animate center">
+                            <div class="full flex">
+                                <div class="full center-text">Više od 15 pari</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <h2 class="full center-text question">Pitanje za kreativni natječaj: <br>Opiši nam svoje omiljene
+                    cipele te zašto si baš njih kupila/kupio:</h2>
+                <div class="full answer-row wrap">
+                    <textarea class="full" required name="poruka" id="poruka" placeholder=""></textarea>
+                </div>
+                <div class="full answer-row wrap">
+                    <h2 class="full center-text question">I za kraj, tvoj e-mail:</h2>
+                    <input type="email" required placeholder="" name="email" id="email" class="full">
+                    <div class="full flex checkbox-section relative">
+                        <input type="checkbox" required id="pravila" name="pravila"><label for="pravila"
+                            style="cursor: pointer;">Prihvaćam
+                            <a href="http://www.adriamedia.hr/politika-privatnosti/" target="_blank">pravila
+                                privatnosti AMZ-a</a> i <a
+                                href="https://story.hr/Lifestyle/a158198/Pravila-kreativnog-natjecaja-Moje-omiljene-cipele.html"
+                                target="_blank">pravila kreativnog natječaja</a> i razumijem da će podaci u ovoj
+                            anketi biti podijeljeni s brendom Deichmann.</label>
+                    </div>
+                    <div class="full center"><input type="submit" id="submit-form" class="full submit-btn animate"
+                            value="Pošalji prijavu"></div>
+                    <div class="full center hide" id="loading-indicator">
+                        <div class="lds-ripple">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <p id="error-msg" class="bold hide">Morate prihvatiti pravila privatnosti i kreativnog natječaja!</p>
+                    <p id="response-msg" class="bold hide">Vaša prijava je spremljena. Hvala na sudjelovanju!</p>
+                </div>
+                <p class="full">Napomena: Najkreativniji odgovor nagrađujemo Deichmann poklon bonom od 500 kuna te
+                    dodatna tri najkreativnija odgovora Deichmann poklon bonom od 250 kuna</p>
+                <p class="full">U anketu se možeš uključiti do 30.4.2021.</p>
+            </form>
+
+            <form id="contact">
+                <input name="user[email]" value="jsmith@example.com">
+                <input name="user[pets][]" type="checkbox" value="cat" checked>
+                <input name="user[pets][]" type="checkbox" value="dog" checked>
+                <input name="user[pets][]" type="checkbox" value="bird">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <script>
+
+        document.querySelector('#submit-form').addEventListener('click', function(e){
+            const url = 'https://script.google.com/macros/s/AKfycbxMYNaBAwb5aFRVeAOmOjkbtyEwFQKa73ZnO-6moIkMbY1md268DvF_KgXEnQTtYmlogg/exec';
+
+            e.preventDefault();
+
+            if(document.getElementById('pravila').checked) {
+
+                $('#submit-form').hide();
+                $('#error-msg').hide();
+                $('#loading-indicator').removeClass('hide');
+                
+                fetch(url,{
+                    method: 'POST',
+                    mode: 'no-cors',
+                    cache: 'no-cache',
+                    headers: {
+                    'Content-Type': 'application/json'
+                    },
+                    redirect: 'follow',
+                    referrerPolicy: 'no-referrer',
+                    body: $('form#jysk-apply').serializeJSON()
+                })
+                    .then(document.querySelector('#loading-indicator').classList.add('hide'))
+                    .then(document.querySelector('#response-msg').classList.remove('hide'));
+
+            }
+            else {
+                $('#error-msg').removeClass('hide');
+            }
+
+
+
+        });
+
+    </script>
+</body>
+</html>
